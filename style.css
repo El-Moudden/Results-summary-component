@@ -1,0 +1,214 @@
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue : hsl(252, 100%, 67%); /*background*/
+    --Light-royal-blue : hsl(241, 81%, 54%); /*background*/
+    --Violet-blue : hsla(256, 72%, 46%, 1); /*circle*/
+    --Persian-blue : hsla(241, 72%, 46%, 0); /*circle*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 1440px;
+    background-color: var(--Pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    width: 740px;
+    height: 500px;
+}
+.first-card {
+    width: 50%;
+    height: 100%;
+    background-color: var(--Light-royal-blue);
+    border-radius: 20px;
+    padding: 40px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-card h2 {
+    color: var(--Light-lavender);
+}
+.first-card .circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--Cobalt-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.circle p {
+    position: absolute;
+    bottom: calc(50% - 48.8px);
+    font-size: 75px;
+    font-weight: 800;
+    color: var(--White);
+}
+.circle span {
+    position: absolute;
+    bottom: 30px;
+    color: #877BFF;
+    font-weight: 700;
+}
+
+.first-card .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-card .rating h3 {
+    color: var(--White);
+    font-size: 26px;
+}
+
+.first-card .rating p {
+    color: var(--Light-lavender);
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+.second-card {
+    width: 50%;
+    height: 100%;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px var(--Light-lavender);
+    padding: 40px 30px;
+
+}
+.second-card h2 {
+    color: black;
+}
+.second-card .summaries {
+    
+    height: 45px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+}
+.second-card .summaries img {
+    padding-right: 10px;
+}
+.second-card .summaries p {
+    position: absolute;
+    right: 10px;
+    color: black;
+    font-weight : 800px;
+}
+.second-card .summaries p span {
+    color: hsl(224deg 30% 27% / 50%);
+}
+
+.second-card .r {
+    background-color: hsl(0deg 100% 67% / 10%);
+
+}
+.second-card .r img+span {
+    color: var(--Light-red);
+}
+
+.second-card .m {
+    background-color: hsl(39deg 100% 56% / 10%);
+}
+.second-card .m img+span {
+    color: var(--Orangey-yellow);
+}
+
+.second-card .v {
+    background-color: hsl(166deg 100% 37% / 10%);
+}
+.second-card .v img+span {
+    color: var(--Green-teal);
+}
+
+.second-card .vi {
+    background-color: hsl(234deg 85% 45% / 10%);
+}
+.second-card .vi img+span {
+    color: var(--Cobalt-blue);
+}
+
+.second-card a {
+    text-decoration: none;
+    background-color: #303B59;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    border-radius: calc(45px/2);
+    margin-top: 15px;
+}
+
+
+@media (max-width:667px) {
+
+    body {
+        background-color: white;
+
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .container .first-card {
+        border-radius: 0 0 25px 25px ;
+        height: fit-content;
+    }
+    .container .second-card {
+        border-radius: 0px;
+        box-shadow: none;
+        height: fit-content;
+    }
+    .first-card .circle {
+        margin: 20px 0;
+    }
+    .second-card h2 {
+        margin-bottom: 25px;
+    }
+    .second-card .summaries {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
